@@ -2,7 +2,7 @@ import React from 'react';
 
 interface AppProps
 {
-  // OptionalなPropsにする。?がなかったらpropsが必須になってしまう
+  // ?をつけてOptionalなPropsにする。?がなかったらpropsが必須になってしまう
   message?: string;
 }
 
@@ -13,7 +13,7 @@ const App: React.FunctionComponent<AppProps> = ({ message }) =>
 };
 
 App.defaultProps = {
-  message : "Hello, defaultProps!"
+  message: "Hello, defaultProps!"
 }
 
 export default App;
