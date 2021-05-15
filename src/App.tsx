@@ -1,4 +1,5 @@
 import React from 'react';
+import Counter from './Counter'
 
 interface AppProps
 {
@@ -9,7 +10,12 @@ interface AppProps
 // AppPropsを型引数に渡す
 const App: React.FunctionComponent<AppProps> = ({ message }) =>
 {
-  return <div>{ message }</div>;
+  return (
+    <div>
+      {message}
+      <Counter/>
+    </div>
+  );
 };
 
 App.defaultProps = {
